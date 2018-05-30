@@ -12,6 +12,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'mvn -v '
+	sh 'date'
       }
     }
     stage('Shared Lib') {
